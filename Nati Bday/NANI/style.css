@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #e0f7f9, #b2f0f0);
+  font-family: 'Poppins', sans-serif;
+  color: #006d77;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heartCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  max-width: 90%;
+}
+
+#introMessage h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#introMessage p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#heartButton {
+  font-size: 5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  z-index: 2;
+}
+
+#heartButton:hover {
+  transform: scale(1.2);
+}
+
+#loveMessage {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  color: #004f4f;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Geschenk */
+#giftBox {
+  display: none;
+  font-size: 5rem;
+  cursor: pointer;
+  margin-top: 40px;
+  z-index: 2;
+}
+
+/* Geschenkseite */
+#giftOverlay {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #e0f7f9, #b2f0f0);
+  z-index: 999;
+}
+
+#giftOverlay img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+}
+
+#giftOverlay p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #004f4f;
+  max-width: 90%;
+}
+
+#backToStart {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
